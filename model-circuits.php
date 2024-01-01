@@ -1,5 +1,5 @@
 <?php
-require_once 'db.php';
+require_once 'connect.php';
 
 class Circuit {
 
@@ -12,7 +12,7 @@ class Circuit {
     }
     public function getById($id) {
         $conect = connectDB();
-        $result = $conect->query("SELECT * FROM items WHERE id = $id");
+        $result = $conect->query("SELECT * FROM circuits WHERE idCircuit = $id");
         
         if ($result->num_rows > 0) {
             $circuitItem = $result->fetch_assoc();
@@ -27,20 +27,20 @@ class Circuit {
         $conect = connectDB();
         $name = $data['name'];
         $description = $data['description'];
-        $conect->query("UPDATE items SET name='$name', description='$description' WHERE id=$id");
+        $conect->query("UPDATE circuits SET name='$name', description='$description' WHERE idCircuit=$id");
         $conect->close();
     }
 
     public function delete($id) {
         $conect = connectDB();
-        $conect->query("DELETE FROM items WHERE id = $id");
+        $conect->query("DELETE FROM circuits WHERE idCircuit = $id");
         $conect->close();
     }
     public function create($data) {
         $conect = connectDB();
         $name = $data['name'];
         $description = $data['description'];
-        $conect->query("INSERT INTO items (name, description) VALUES ('$name', '$description')");
+        $conect->query("INSERT INTO circuits (name, description) VALUES ('$name', '$description')");
         $conect->close();
     }
 
