@@ -1,6 +1,10 @@
 <?php
-// index.php
 
+require_once 'model-circuits.php';
+
+
+
+$circuitIds = Circuit::getId();
 ?>
 
 <!DOCTYPE html>
@@ -29,16 +33,27 @@
 <form action="router.php" method="post">
     <input type="hidden" name="test_action" value="CREATE">
     <!-- Include JSON data for POST -->
-    <textarea name="data" placeholder="JSON Data"></textarea>
+    title :<input type="text" name="title" value="" placeholder="title">
+    subTitle :<input type="text" name="subTitle" value="" placeholder="subTitle">
+    icon :<input type="text" name="icon" value="" placeholder="icon">
     <button type="submit">CREATE Circuit</button>
 </form>
 
 <!-- Form to test UPDATE Circuit -->
 <form action="router.php" method="post">
     <input type="hidden" name="test_action" value="UPDATE">
-    <input type="text" name="id" placeholder="Circuit ID">
+    <select id="update_id" name="id">
+        <!-- Populate the options dynamically based on the fetched IDs -->
+        <?php
+            foreach ($circuitIds as $row) {
+                echo '<option value="' . $row['idCircuit'] . '">' . $row['idCircuit'] . '</option>';
+            }
+        ?>
+    </select>
     <!-- Include JSON data for PUT -->
-    <textarea name="data" placeholder="Updated JSON Data"></textarea>
+    title :<input type="text" name="title" value="" placeholder="title">
+    subTitle :<input type="text" name="subTitle" value="" placeholder="subTitle">
+    icon :<input type="text" name="icon" value="" placeholder="icon">
     <button type="submit">UPDATE Circuit</button>
 </form>
 

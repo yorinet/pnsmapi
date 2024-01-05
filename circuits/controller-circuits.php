@@ -29,13 +29,19 @@ class Controller {
         }
     }
 
-    public function createCircuit($dataCreate) {
-        $this->circuitModel->create($dataCreate);
-        $this->sendResponse(201, ['message' => 'Item created successfully']);
+    public function createCircuit($data) {
+        echo "hello from controller";
+        print_r($data);
+        echo "<br>";
+        $this->circuitModel->create($data);
+        $this->sendResponse(200, ['message' => 'Item created successfully']);
     }
 
-    public function updateCircuit($id, $dataUpdate) {
-        $this->circuitModel->update($id, $dataUpdate);
+    public function updateCircuit($id, $data) {
+        echo "hello from controller";
+        print_r($data);
+        echo "<br>";
+        $this->circuitModel->update($id, $data);
         $this->sendResponse(200, ['message' => 'Item updated successfully']);
     }
 

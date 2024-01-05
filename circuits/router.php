@@ -2,7 +2,7 @@
 
 // Include the PHP files
 require_once 'controller-circuits.php';
-require_once 'config.php';
+require_once 'C:\xampp\htdocs\pnsmapi\config.php';
 
 // Create an instance of the Controller
 $controller = new Controller();
@@ -20,15 +20,29 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 }
                 break;
             case 'CREATE':
-                if (isset($_POST['data'])) {
-                    $data = json_decode($_POST['data'], true);
+                if (isset($_POST['title']) && isset($_POST['subTitle']) && isset($_POST['icon'])) {
+                    $data = [
+                        'title' => $_POST['title'],
+                        'subTitle' => $_POST['subTitle'],
+                        'icon' => $_POST['icon']
+                    ];
+                    echo "hello from router";
+                    print_r($data);
+                    echo "<br>";
                     $controller->createCircuit($data);
                 }
                 break;
             case 'UPDATE':
-                if (isset($_POST['id']) && isset($_POST['data'])) {
+                if (isset($_POST['id']) && isset($_POST['title']) && isset($_POST['subTitle']) && isset($_POST['icon'])) {
                     $id = $_POST['id'];
-                    $data = json_decode($_POST['data'], true);
+                    $data = [
+                        'title' => $_POST['title'],
+                        'subTitle' => $_POST['subTitle'],
+                        'icon' => $_POST['icon']
+                    ];
+                    echo "hello from router";
+                    print_r($data);
+                    echo "<br>";
                     $controller->updateCircuit($id, $data);
                 }
                 break;
