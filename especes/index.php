@@ -34,7 +34,7 @@ $especesId = Especes::getId();
     <input type="hidden" name="test_action" value="CREATE">
     <!-- Include JSON data for POST -->
     espece :<input type="text" name="espece" value="" placeholder="espece">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     type :<input type="text" name="type" value="" placeholder="type">
     <button type="submit">CREATE Especes</button>
 </form>
@@ -52,7 +52,7 @@ $especesId = Especes::getId();
     </select>
     <!-- Include JSON data for PUT -->
     espece :<input type="text" name="espece" value="" placeholder="title">
-    image :<input type="text" name="image" value="" placeholder="subTitle">
+    image :<input type="file" name="image" value="" placeholder="subTitle">
     type :<input type="text" name="type" value="" placeholder="icon">
     <button type="submit">UPDATE Especes</button>
 </form>

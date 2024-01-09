@@ -46,7 +46,7 @@ $especesdetailsItems = EspecesDetails::getIddetails();
     name :<input type="text" name="name" value="" placeholder="name">
     desc :<input type="text" name="desc" value="" placeholder="desc">
     subDesc :<input type="text" name="subDesc" value="" placeholder="subDesc">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     color :<input type="text" name="color" value="" placeholder="color">
     <button type="submit">CREATE EspecesDetails</button>
 </form>
@@ -74,7 +74,7 @@ $especesdetailsItems = EspecesDetails::getIddetails();
     name :<input type="text" name="name" value="" placeholder="name">
     desc :<input type="text" name="desc" value="" placeholder="desc">
     subDesc :<input type="text" name="subDesc" value="" placeholder="subDesc">
-    image :<input type="text" name="image" value="" placeholder="Image">
+    image :<input type="file" name="image" value="" placeholder="Image">
     color :<input type="text" name="color" value="" placeholder="color">
     <button type="submit">UPDATE EspecesDetails</button>
 </form>

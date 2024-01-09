@@ -48,7 +48,7 @@ $circuitsdetails = CircuitDetails::getIddetails();
     tel :<input type="text" name="tel" value="" placeholder="tel">
     email :<input type="email" name="email" value="" placeholder="email">
     pinmap :<input type="text" name="pinmap" value="" placeholder="pinmap">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">CREATE CircuitDetails</button>
 </form>
 
@@ -77,7 +77,7 @@ $circuitsdetails = CircuitDetails::getIddetails();
     tel :<input type="text" name="tel" value="" placeholder="tel">
     email :<input type="email" name="email" value="" placeholder="email">
     pinmap :<input type="text" name="pinmap" value="" placeholder="pinmap">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">UPDATE CircuitDetails</button>
 </form>
 

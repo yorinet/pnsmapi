@@ -36,7 +36,7 @@ $presentationId = Presentation::getId();
     title :<input type="text" name="title" value="" placeholder="title">
     subtitle :<input type="text" name="subtitle" value="" placeholder="subtitle">
     description :<input type="text" name="description" value="" placeholder="description">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">CREATE Presentation</button>
 </form>
 
@@ -55,7 +55,7 @@ $presentationId = Presentation::getId();
     title :<input type="text" name="title" value="" placeholder="title">
     subtitle :<input type="text" name="subtitle" value="" placeholder="subtitle">
     description :<input type="text" name="description" value="" placeholder="description">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">UPDATE Presentation</button>
 </form>
 

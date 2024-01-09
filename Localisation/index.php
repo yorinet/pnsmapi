@@ -37,7 +37,7 @@ $localisationId = Localisation::getId();
     subtitle :<input type="text" name="subtitle" value="" placeholder="subtitle">
     description :<input type="text" name="description" value="" placeholder="description">
     pinmap :<input type="text" name="pinmap" value="" placeholder="pinmap">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">CREATE Localisation</button>
 </form>
 
@@ -57,7 +57,7 @@ $localisationId = Localisation::getId();
     subtitle :<input type="text" name="subtitle" value="" placeholder="subtitle">
     description :<input type="text" name="description" value="" placeholder="description">
     pinmap :<input type="text" name="pinmap" value="" placeholder="pinmap">
-    image :<input type="text" name="image" value="" placeholder="image">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">UPDATE Localisation</button>
 </form>
 

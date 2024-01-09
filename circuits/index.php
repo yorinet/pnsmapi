@@ -35,7 +35,7 @@ $circuitIds = Circuit::getId();
     <!-- Include JSON data for POST -->
     title :<input type="text" name="title" value="" placeholder="title">
     subTitle :<input type="text" name="subTitle" value="" placeholder="subTitle">
-    icon :<input type="text" name="icon" value="" placeholder="icon">
+    icon :<input type="file" name="icon" value="" placeholder="icon">
     <button type="submit">CREATE Circuit</button>
 </form>
 
@@ -53,7 +53,7 @@ $circuitIds = Circuit::getId();
     <!-- Include JSON data for PUT -->
     title :<input type="text" name="title" value="" placeholder="title">
     subTitle :<input type="text" name="subTitle" value="" placeholder="subTitle">
-    icon :<input type="text" name="icon" value="" placeholder="icon">
+    icon :<input type="file" name="icon" value="" placeholder="icon">
     <button type="submit">UPDATE Circuit</button>
 </form>
 

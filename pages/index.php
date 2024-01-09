@@ -37,8 +37,8 @@ $pagesId = Pages::getId();
     title :<input type="text" name="title" value="" placeholder="title">
     subtitle :<input type="text" name="subtitle" value="" placeholder="subtitle">
     description :<input type="text" name="description" value="" placeholder="description">
-    icon :<input type="text" name="icon" value="" placeholder="icon">
-    image :<input type="text" name="image" value="" placeholder="image">
+    icon :<input type="file" name="icon" value="" placeholder="icon">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">CREATE Pages</button>
 </form>
 
@@ -58,8 +58,8 @@ $pagesId = Pages::getId();
     title :<input type="text" name="title" value="" placeholder="title">
     subtitle :<input type="text" name="subtitle" value="" placeholder="subtitle">
     description :<input type="text" name="description" value="" placeholder="description">
-    icon :<input type="text" name="icon" value="" placeholder="icon">
-    image :<input type="text" name="image" value="" placeholder="image">
+    icon :<input type="file" name="icon" value="" placeholder="icon">
+    image :<input type="file" name="image" value="" placeholder="image">
     <button type="submit">UPDATE Pages</button>
 </form>
 
